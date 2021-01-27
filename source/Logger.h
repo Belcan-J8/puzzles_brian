@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include "ColorSupport.h"
 
 struct ILogger
 {
@@ -12,9 +11,6 @@ class Logger : public ILogger
 {
 public:
 	void Log(std::string string);
-	void Log(std::string string, ColorSupport::TextColor color);
-private:
-	ColorSupport col;
 };
 
 class BlueLogger : public ILogger

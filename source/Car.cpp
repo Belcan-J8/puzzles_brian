@@ -6,17 +6,17 @@ Car::Car()
 }
 void Car::TurnLeft()
 {
-	((Logger*)logger)->Log("Turning left", outputColor);
+	logger->Log("Turning left");
 	fuelGauge.DecrementFuelLevel();
 }
 void Car::TurnRight()
 {
-	((Logger*)logger)->Log("Turning right", outputColor);
+	logger->Log("Turning right");
 	fuelGauge.DecrementFuelLevel();
 }
 void Car::Accelerate()
 {
-	((Logger*)logger)->Log("Moving ahead", outputColor);
+	logger->Log("Moving ahead");
 	fuelGauge.DecrementFuelLevel();
 	fuelGauge.DecrementFuelLevel();
 }

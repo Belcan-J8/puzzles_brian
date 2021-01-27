@@ -2,7 +2,6 @@
 
 #include "FuelGauge.h"
 #include "Logger.h"
-#include "ColorSupport.h"
 
 class Car
 {
@@ -14,5 +13,4 @@ public:
 private:
 	FuelGauge fuelGauge;
 	ILogger* logger;
-	ColorSupport::TextColor outputColor;
 };
