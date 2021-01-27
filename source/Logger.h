@@ -12,3 +12,34 @@ class Logger : public ILogger
 public:
 	void Log(std::string string);
 };
+
+class BlueLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
+class RedLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
+class YellowLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
+class CyanLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
+class MagentaLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
