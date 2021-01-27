@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Logger.h"
+#include "ColorSupport.h"
 
 class FuelGauge
 {
@@ -10,4 +11,5 @@ public:
 private:
 	int fuelLevel;
 	ILogger* logger;
+	ColorSupport::TextColor outputColor;
 };

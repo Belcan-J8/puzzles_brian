@@ -3,13 +3,15 @@
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
 	, logger(new Logger())
+	, outputColor(ColorSupport::red)
 {
 }
+
 void FuelGauge::DecrementFuelLevel()
 {
 	--fuelLevel;
 	if (fuelLevel < 2)
 	{
-		logger->Log("Low fuel!");
+		((Logger*)logger)->Log("Low fuel!", outputColor);
 	}
 }
