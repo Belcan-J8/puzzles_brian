@@ -1,16 +1,17 @@
 #include "Logger.h"
 
+#include "termcolor.hpp"
 #include <iostream>
 
 void Logger::Log(std::string string)
 {
 	std::cout << string << std::endl;
 }
-
-void Logger::Log(std::string string, ColorSupport::TextColor color)
+void BlueLogger::Log(std::string string)
 {
-	col.GetColorStream(color) << string;
-
-	// Write a blank string with default color to reset the color. Prevents color bleed.
-	col.GetColorStream(col.white) << "" << std::endl;
+	std::cout << termcolor::blue << string << std::endl;
+}
+void RedLogger::Log(std::string string)
+{
+	std::cout << termcolor::red << string << std::endl;
 }

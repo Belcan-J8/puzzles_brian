@@ -2,8 +2,7 @@
 
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
-	, logger(new Logger())
-	, outputColor(ColorSupport::red)
+	, logger(new RedLogger())
 {
 }
 

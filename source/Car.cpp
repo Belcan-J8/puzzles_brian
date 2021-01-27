@@ -1,7 +1,7 @@
 #include "Car.h"
 
 Car::Car()
-	: logger(new Logger()), outputColor(ColorSupport::blue)
+	: logger(new BlueLogger())
 {
 }
 void Car::TurnLeft()

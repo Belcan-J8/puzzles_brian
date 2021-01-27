@@ -16,3 +16,16 @@ public:
 private:
 	ColorSupport col;
 };
+
+class BlueLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
+class RedLogger : public ILogger
+{
+public:
+	void Log(std::string string);
+};
+
