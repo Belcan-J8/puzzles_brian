@@ -1,2 +1,2 @@
 call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\Tools\VsDevCmd.bat"
-cl /EHsc ..\main.cpp ..\Car.cpp ..\FuelGauge.cpp ..\Logger.cpp ..\ColorSupport.cpp
+cl /EHsc ..\main.cpp ..\Car.cpp ..\FuelGauge.cpp ..\Logger.cpp
